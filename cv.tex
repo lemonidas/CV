@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\name{Leonidas Lampropoulos} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\address{Website: \href{https://lemonidas.github.io}{lemonidas.github.io}}
+\address{e-mail: leonidaslamp@hotmail.com} 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\edu}[4]{
+  {\bf #3} \hfill {\em #2}\\
+  {#1}\\
+  #4\\
+}
+
+\begin{rSection}{Education and Work Experience}
+
+\edu{PostDoc in Computer Science}{2018 - now}
+    {University of Maryland, College Park}{
+      PLUM lab - Programming Languages Group\\
+      Advisor: Michael Hicks
+    }
+
+\edu{PostDoc in Computer Science}{2018 - now}
+    {University of Pennsylvania}{
+      PLClub - Programming Languages Group\\
+      Advisor: Benjamin C. Pierce
+    }
+
+\edu{PhD in Computer Science}{2012 - 2018}
+    {University of Pennsylvania}{
+%      GPA: 3.99\\
+      Title: Random Testing for Language Design\\
+      Advisor: Benjamin C. Pierce
+    }
+    
+\edu{Research Internship}{Summer 2015}
+    {Microsoft Research, Cambridge}{
+      Formal Methods for Neural Network Verification\\
+      Advisors: Aditya Nori and Dimitros Vytiniotis
+    }
+
+\edu{Diploma in Electrical Engineering and Computer Science}{2007 - 2012}
+    {National Technical University of Athens}
+    {
+      GPA: 9.5/10\\
+      Thesis Advisor: Kostis Sagonas
+     }
+
+\edu{High School Diploma}{2007}
+    {Athens College}
+    {Athens, Greece}
+    {Magna Cum Laude, 19.6/20}
+    
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\newcommand{\pub}[4]{
+  {\bf #1} \hfill {\href{https://lemonidas.github.io/pdf/#2}{\bf \em #4}}\\
+  {#3}
+  }
+
+\newcommand{\pubsub}[5]{
+  {\bf #1:} \hfill {\href{https://lemonidas.github.io/pdf/#2}{\bf \em #4}}\\
+  {\bf #5}\\
+  {#3}
+  }
+
+\begin{rSection}{Books}
+  {\bf QuickChick: Property-Based Testing in Coq} \hfill {\em 2018}\\
+  {\em Leonidas Lampropoulos and Benjamin C. Pierce.}
+  {Software Foundation Series, \href{https://softwarefoundations.cis.upenn.edu}{Volume 4}}
+
+\end{rSection}
+
+\begin{rSection}{Publications}
+
+\pub{Coverage Guided, Property Based Testing}
+    {FuzzChick.pdf}
+    {Leonidas Lampropoulos, Michael Hicks, and Benjamin C. Pierce.}
+    {OOPSLA 2019}
+    
+\pub{Advancing Safety Incrementally with Checked C}
+    {CheckedC.pdf}
+    {Andrew Ruef, Leonidas Lampropoulos, Ian Sweet, David Tarditi, and Michael Hicks.}
+    {POST 2019}
+
+
+\pub{Keep your Laziness in Check}
+    {StrictCheck.pdf}
+    {Kenneth Foner, Hengchu Zhang and Leonidas Lampropoulos.}
+    {ICFP 2018}
+
+\pub{Generating Good Generators for Inductive Relations}
+    {GeneratingGoodGenerators.pdf}
+    {Leonidas Lampropoulos, Zoe Paraskevopoulou and Benjamin C.}
+    {POPL 2018}
+
+\pub{Ode on a Random Urn (Functional Pearl)}
+    {urns.pdf}
+    {Leonidas Lampropoulos, Antal Spector-Zabusky and Kenneth Fonner}
+    {Haskell Symposium 2017}
+
+
+\pubsub{A Tale of Two Provers}
+    {a-tale.pdf}
+    {Niiki Vazou, Leonidas Lampropoulos and Jeff Polakow.}
+    {Haskell Symposium 2017}
+    {Verifying Monoidal String Matching in Liquid Haskell and Coq}
+
+\pub{Beginner's Luck: A Language for Property-Based Generators}
+    {Luck.pdf}
+    {Leonidas Lampropoulos, Diane Gallois-Wong, Cătălin Hriţcu, John Hughes, Benjamin C. Pierce, and Li-yao Xia.}
+    {POPL 2017}
+
+
+\pub{Measuring Neural Net Robustness with Constraints}
+    {Robustness.pdf}
+    {Osbert Bastani, Yani Ioannou, Leonidas Lampropoulos, Dimitrios Vytiniotis, Aditya Nori and Antonio Criminisi.}
+    {NIPS 2016}
+
+
+\pub{Foundational Property-Based Testing}
+    {Foundational.pdf}
+    {Zoe Paraskevopoulou, Cătălin Hriţcu, Maxime Dénès, Leonidas Lampropoulos, and Benjamin C. Pierce.}
+    {ITP 2015}
+
+\pub{Testing Noninterference, Quickly.}
+    {TestingNonInterferenceQuickly.pdf}
+    {Cătălin Hriţcu, Leonidas Lampropoulos, Antal Spector-Zabusky, Arthur
+    Azevedo De Amorim, Maxime Dénès, John Hughes, Benjamin C. Pierce, and Dimitrios
+    Vytiniotis.}
+    {Journal of Functional Programming 2016}
+
+\pub{Testing Noninterference, Quickly.}
+    {TestingNonInterferenceQuickly.pdf}
+    {Cătălin Hriţcu, John Hughes, Benjamin C. Pierce, Antal
+      Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim
+      and Leonidas Lampropoulos.}
+    {ICFP 2013}
+
+\pub{Automatic WSDL-guided Test Case Generation for PropEr Testing of Web Services}
+    {AutomaticWSDLTesting.pdf}
+    {Leonidas Lampropoulos and Kostis Sagonas.}
+    {WWV 2012}
+   
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TALKS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\talk}[3]{
+  {\bf #1} \\ %\hfill {\href{https://lemonidas.github.io/pdf/#2}{(Slides)}}\\
+  {#3}
+  }
+
+
+\begin{rSection}{Invited Talks and Tutorials}
+
+\talk{QuickChick : Property-Based Testing in Coq}
+    {QuickChickTutorial.pdf}
+    {POPL TutorialFest, Lisbon, 2019}
+
+\talk{Random Testing in the Coq Proof Assistant}
+     {InvitedCLA.pdf}
+     {Computational Logic and Applications, Chalmers, 2017}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
