@@ -24,6 +24,8 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{xspace}
 
 \name{Leonidas Lampropoulos} % Your name
 %\address{123 Broadway \\ City, State 12345} % Your address
@@ -48,6 +50,7 @@
 
 \edu{PostDoc in Computer Science}{2018 - now}
     {University of Maryland, College Park}{
+      Victor Basili PostDoctoral Fellow\\
       PLUM lab - Programming Languages Group\\
       Advisor: Michael Hicks
     }
@@ -88,6 +91,10 @@
 %----------------------------------------------------------------------------------------
 %	Publications
 %----------------------------------------------------------------------------------------
+
+\newcommand{\Catalin}{C\u{a}t\u{a}lin\xspace}
+\newcommand{\Hritcu}{Hri\c{t}cu\xspace}
+\newcommand{\Denes}{D\'en\`es\xspace}
 
 \newcommand{\pub}[4]{
   {\bf #1} \hfill {\href{https://lemonidas.github.io/pdf/#2}{\bf \em #4}}\\
@@ -144,7 +151,7 @@
 
 \pub{Beginner's Luck: A Language for Property-Based Generators}
     {Luck.pdf}
-    {Leonidas Lampropoulos, Diane Gallois-Wong, Cătălin Hriţcu, John Hughes, Benjamin C. Pierce, and Li-yao Xia.}
+    {Leonidas Lampropoulos, Diane Gallois-Wong, \Catalin \Hritcu, John Hughes, Benjamin C. Pierce, and Li-yao Xia.}
     {POPL 2017}
 
 
@@ -156,19 +163,19 @@
 
 \pub{Foundational Property-Based Testing}
     {Foundational.pdf}
-    {Zoe Paraskevopoulou, Cătălin Hriţcu, Maxime Dénès, Leonidas Lampropoulos, and Benjamin C. Pierce.}
+    {Zoe Paraskevopoulou, \Catalin \Hritcu, Maxime \Denes, Leonidas Lampropoulos, and Benjamin C. Pierce.}
     {ITP 2015}
 
 \pub{Testing Noninterference, Quickly.}
     {TestingNonInterferenceQuickly.pdf}
-    {Cătălin Hriţcu, Leonidas Lampropoulos, Antal Spector-Zabusky, Arthur
-    Azevedo De Amorim, Maxime Dénès, John Hughes, Benjamin C. Pierce, and Dimitrios
+    {\Catalin \Hritcu, Leonidas Lampropoulos, Antal Spector-Zabusky, Arthur
+    Azevedo De Amorim, Maxime \Denes, John Hughes, Benjamin C. Pierce, and Dimitrios
     Vytiniotis.}
     {Journal of Functional Programming 2016}
 
 \pub{Testing Noninterference, Quickly.}
     {TestingNonInterferenceQuickly.pdf}
-    {Cătălin Hriţcu, John Hughes, Benjamin C. Pierce, Antal
+    {\Catalin \Hritcu, John Hughes, Benjamin C. Pierce, Antal
       Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim
       and Leonidas Lampropoulos.}
     {ICFP 2013}
@@ -204,14 +211,68 @@
 
 
 %----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
+%	Awards
 %----------------------------------------------------------------------------------------
 
-%\begin{rSection}{Section Name}
+\begin{rSection}{Awards}
 
-%Section content\ldots
+  \begin{longtable}{rl}
+  2018 & Victor Basili PostDoctoral Fellowship (UMD)\\
+  2014	 & Teaching Practicum Award (Penn Engineering) \\
+  2012 & State Scholarship Foundation (IKY) award and scholarship \\
+       & for first place during the 5th year of studies \\
+  % Placeholder : Pari Kanellaki
+  July  2011  &  Second  Prize,  18th  International Mathematical Competition (IMC) \\
+  &  for University Students , Blagoevgrad, Bulgaria \\
+  2011 & IKY first place award and scholarship (4th year)\\
+  July 2010 &  Honorable Mention,  17th IMC, Blagoevgrad, Bulgaria \\
+  2010 & IKY first place award and scholarship (3rd year)\\
+  July 2009 &  Honorable Mention,  16th IMC, Budapest, Hungary\\
+  Mar 2009  &  2nd Award, South Eastern European Mathematical Olympiad, Cyprus\\
 
-%\end{rSection}
+  June  2007 &   High  School  Diploma with  honors  “Magna  Cum  Laude”\\
+             &   Mathematics Award, Physics Award,  Excellance Award (19.6)\\
+  Feb 2007 &  3rd Award, 24th Mathematical Olympiad “Archimedes”\\
+  Feb 2007 &  1st Award, 67th Panhellenic Math Contest “Euclid”\\
+  2006 &  American Mathematics Competition, Certificate of Distinction\\
+  2005-2006 &  Excellance Award (18.6)\\
+  Feb 2006 &  1st Award, 66th Panhellenic Math Contest “Euclid”\\
+  2004-2005 &  Excellance Award (19)\\
+  June 2005 &  Third Prize, 9th Junior Balcan Mathematical Olympiad, Veroia\\
+  2004 &  American Mathematics Competition, Certificate of Distinction\\
+  2003-2004&  Excellance Award (19 and 2/13)\\
+  2002-2003&  Excellance Award (19)\\
+  2002 & American Mathematics Contest (AMC 8), third place\\
+  2001-2002&  Excellance Award (19 and 8/13)\\
+  2001-2002&  Certificate of Distinction\\
+  
+\end{longtable}
+
+\end{rSection}
+
+%--- LANGUAGES AND SKILLS
+
+\begin{rSection}{Programming Languages and Example Projects}
+
+  {\bf Excellent:}\\
+  Haskell -- \href {https://github.com/QuickChick/Luck/tree/master/luck}{ Luck - Interpreter}\\
+  Coq -- \href{https://github.com/QuickChick/Luck/tree/master/coq}{ Luck - Metatheory}, \href{https://github.com/plum-umd/checkedc/tree/master/coq}{Checked C - Formalization}\\
+  OCaml -- \href{https://github.com/QuickChick/QuickChick}{QuickChick}\\
+  C\# -- \href{https://github.com/microsoft/NeuralNetworkAnalysis}{Neural Network Analysis Framework}\\
+
+  {\bf Familiar:}\\
+  C, C++, F\#, Erlang, Java, Python, Prolog
+
+\end{rSection}
+
+\begin{rSection}{Languages}
+
+  {\bf Greek}: Native \\
+  {\bf English}: Excellent ({\em Certificate of Proficiency in English, Oxford})\\
+  {\bf German}: Basic ({\em B2 Mittelstufe Deutsch})\\
+\end{rSection}
+
+
 
 %----------------------------------------------------------------------------------------
 
