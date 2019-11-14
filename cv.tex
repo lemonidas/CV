@@ -32,7 +32,7 @@
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 %\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
 \address{Website: \href{https://lemonidas.github.io}{lemonidas.github.io}}
-\address{e-mail: leonidaslamp@hotmail.com} 
+\address{e-mail: leonidas@umd.edu}
 
 \begin{document}
 
@@ -100,6 +100,11 @@
   {#3}
   }
 
+\newcommand{\pubtwo}[6]{
+  {\bf #1} \hfill {\href{https://lemonidas.github.io/pdf/#2}{\bf \em #4}}, {\href{https://lemonidas.github.io/pdf/#5}{\bf \em #6}}\\
+  {#3}
+  }
+
 \newcommand{\pubsub}[5]{
   {\bf #1:} \hfill {\href{https://lemonidas.github.io/pdf/#2}{\bf \em #4}}\\
   {\bf #5}\\
@@ -108,15 +113,15 @@
 
 \begin{rSection}{Books}
 
-  {\bf Foundations of Probabilistic Programming} \hfill {\em to appear}\\
-  {\em Editors:} {Gilles Barthe, Joost-Pieter Katoen, and Alexandra Silva}\\
-  {\em Chapter:} Luck: A Probabilistic Language for Testing\\
-  {Leonidas Lampropoulos, Diane Gallois-Wong, C\u{a}t\u{a}lin Hri\c{t}cu, John Hughes, Benjamin C. Pierce and Li-yao Xia}\\
-  
   {\bf QuickChick: Property-Based Testing in Coq} \hfill {\em 2018}\\
-  {\em Leonidas Lampropoulos and Benjamin C. Pierce.}
+  {\em Leonidas Lampropoulos and Benjamin C. Pierce.}\\
   {Software Foundation Series, \href{https://softwarefoundations.cis.upenn.edu}{Volume 4}}
 
+  {\bf Luck: A Probabilistic Language for Testing} \hfill {\em chapter, to appear}\\
+  {\em Leonidas Lampropoulos, Diane Gallois-Wong, C\u{a}t\u{a}lin Hri\c{t}cu, John Hughes, Benjamin C. Pierce and Li-yao Xia}\\
+  In book: {Foundations of Probabilistic Programming} \\
+  {\em Editors:} {Gilles Barthe, Joost-Pieter Katoen, and Alexandra Silva}\\
+  
 \end{rSection}
 
 \begin{rSection}{Publications}
@@ -130,7 +135,6 @@
     {CheckedC.pdf}
     {Andrew Ruef, Leonidas Lampropoulos, Ian Sweet, David Tarditi, and Michael Hicks.}
     {POST 2019}
-
 
 \pub{Keep your Laziness in Check}
     {StrictCheck.pdf}
@@ -147,7 +151,6 @@
     {Leonidas Lampropoulos, Antal Spector-Zabusky and Kenneth Fonner}
     {Haskell 2017}
 
-
 \pubsub{A Tale of Two Provers}
     {a-tale.pdf}
     {Niiki Vazou, Leonidas Lampropoulos and Jeff Polakow.}
@@ -159,31 +162,31 @@
     {Leonidas Lampropoulos, Diane Gallois-Wong, \Catalin \Hritcu, John Hughes, Benjamin C. Pierce, and Li-yao Xia.}
     {POPL 2017}
 
-
 \pub{Measuring Neural Net Robustness with Constraints}
     {Robustness.pdf}
     {Osbert Bastani, Yani Ioannou, Leonidas Lampropoulos, Dimitrios Vytiniotis, Aditya Nori and Antonio Criminisi.}
     {NIPS 2016}
 
-
 \pub{Foundational Property-Based Testing}
     {Foundational.pdf}
     {Zoe Paraskevopoulou, \Catalin \Hritcu, Maxime \Denes, Leonidas Lampropoulos, and Benjamin C. Pierce.}
     {ITP 2015}
-
-\pub{Testing Noninterference, Quickly.}
+    
+\pubtwo{Testing Noninterference, Quickly.}
     {TestingNonInterferenceQuickly.pdf}
     {\Catalin \Hritcu, Leonidas Lampropoulos, Antal Spector-Zabusky, Arthur
     Azevedo De Amorim, Maxime \Denes, John Hughes, Benjamin C. Pierce, and Dimitrios
     Vytiniotis.}
     {JFP 2016}
-
-\pub{Testing Noninterference, Quickly.}
     {TestingNonInterferenceQuickly.pdf}
-    {\Catalin \Hritcu, John Hughes, Benjamin C. Pierce, Antal
-      Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim
-      and Leonidas Lampropoulos.}
     {ICFP 2013}
+%
+%\pub{Testing Noninterference, Quickly.}
+%    {TestingNonInterferenceQuickly.pdf}
+%    {\Catalin \Hritcu, John Hughes, Benjamin C. Pierce, Antal
+%      Spector-Zabusky, Dimitrios Vytiniotis, Arthur Azevedo de Amorim
+%      and Leonidas Lampropoulos.}
+%    {ICFP 2013}
 
 \pub{Automatic WSDL-guided Test Case Generation\\ for PropEr Testing of Web Services}
     {AutomaticWSDLTesting.pdf}
@@ -241,10 +244,32 @@ Antonio Criminisi, Aditya Nori, Dimitrios Vytiniotis, Osbert Bastani, and Leonid
     {QuickChickTutorial.pdf}
     {POPL TutorialFest, Lisbon, 2019}
 
+\talk{StrictCheck : Keep your Laziness in Check}
+     {}
+     {PL Seminar, NTUA, 2018}
+
+\talk{Ode to a Random Urn}
+     {}
+     {PL Seminar, NTUA, 2017}
+     
 \talk{Random Testing in the Coq Proof Assistant}
      {InvitedCLA.pdf}
      {Keynote, Computational Logic and Applications, Chalmers, 2017}
 
+\talk{Making our Own Luck}
+     {}
+     {PL Seminar, NTUA, 2016}
+
+\talk{Making our Own Luck: A Language for Random Generators}
+     {}
+     {PPS Workshop, 2016}
+
+\talk{Testing Noninterference, Quickly}
+     {}
+     {PL Seminar, NTUA, 2013}
+
+     
+     
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -266,10 +291,11 @@ Antonio Criminisi, Aditya Nori, Dimitrios Vytiniotis, Osbert Bastani, and Leonid
   \serve{PLDI '19}{AEC member}
   \serve{PLAS '19}{PC member}
   \serve{ICFP '18}{PLMW, Panel: Research in Functional Programming}
+  \serve{Haskell '16}{External Reviewer}
   
 \end{rSection}
 
-\pagebreak
+
 %----------------------------------------------------------------------------------------
 %	Awards
 %----------------------------------------------------------------------------------------
