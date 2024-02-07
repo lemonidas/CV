@@ -98,24 +98,24 @@
 %	Grants
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Funding}
+\begin{rSectionFill}{Funding}{(Own Portion Total: \$2,651,455)}
 
   {\bf DARPA:PROVERS:}{VERSE: Verification Engineering for Real-World Software Engineering}\\
-  {\em with Galois, Penn, Cambridge, UIUC.} 2024-2027\hfill{529,757\$}\\
+  {\em with Galois, Penn, Cambridge, UIUC.} 2024-2027\hfill{\$529,757}\\
   
   {\bf AFOSR:}{Random Testing Across the Quantum Computing Stack}\\
-  {\em with Robert Rand.} 2023-2028\hfill{625,000\$}\\
+  {\em with Robert Rand.} 2023-2028\hfill{\$625,000}\\
   
   {\bf NSF:SHF:CAREER:}{Fuzzing Formal Specifications}\\
-  2022-2027\hfill{582,352\$}\\
+  2022-2027\hfill{\$582,352}\\
   
   {\bf NSF:SHF:Medium:}{Efficient and Trustworthy Proof Engineering}\\
-  {\em with Milos Gligoric.} 2021-2024\hfill{539,956\$}\\
+  {\em with Milos Gligoric.} 2021-2024\hfill{\$539,956}\\
   
   {\bf NSF:SHF:Medium:}Bringing Python up to Speed\\
-  {\em with Emery Berger, Michael Hicks, and Benjamin C. Pierce.} 2020-2023\hfill{374,390\$}\\
+  {\em with Emery Berger, Michael Hicks, and Benjamin C. Pierce.} 2020-2023\hfill{\$374,390}\\
   
-\end{rSection}
+\end{rSectionFill}
 
 %----------------------------------------------------------------------------------------
 %	Publications
@@ -147,7 +147,7 @@
   {\em Leonidas Lampropoulos and Benjamin C. Pierce.}\\
   {Software Foundation Series, \href{https://softwarefoundations.cis.upenn.edu}{Volume 4}}
 
-  {\bf Luck: A Probabilistic Language for Testing} \hfill {\em chapter, to appear}\\
+  {\bf Luck: A Probabilistic Language for Testing} \hfill {\em chapter, 2021}\\
   {\em Leonidas Lampropoulos, Diane Gallois-Wong, C\u{a}t\u{a}lin Hri\c{t}cu, John Hughes, Benjamin C. Pierce, and Li-yao Xia} {(editors: Gilles Barthe, Joost-Pieter Katoen, and Alexandra Silva)}\\
   In book: {Foundations of Probabilistic Programming} \\
 
@@ -156,11 +156,21 @@
 
 \begin{rSection}{Publications}
 
+\pub{Generating Well-Typed Terms that are not "Useless"}
+    {NotUseless.pdf}
+    {Justin Frank, Benjamin Quiring, and Leonidas Lampropoulos}
+    {POPL 2024}
+  
 \pub{Object Graph Programming}
     {OGO.pdf}
     {Aditya Thimmaiah, Leonidas Lampropoulos, Christopher Rossbach, and Milos Gligoric}
     {ICSE 2024}
 
+\pub{A Formal Model of Checked C}
+    {CheckedCFormal.pdf}
+    {Liyi Li, Yiyun Liu, Deena Postol, Leonidas Lampropoulos, David Van Horn, and Michael Hicks.}
+    {JCS 2023}
+    
 \pubsub{Don’t Go Down the Rabbit Hole}
     {CombinatorialEnum.pdf}
     {Segev Elazar Mittelman, Alvin Resnick, Ivan Perez, Alwyn Goodloe, and Leonidas Lampropoulos}
@@ -202,7 +212,7 @@
     {Zoe Paraskevopoulou, Aaron Eline, and Leonidas Lampropoulos.}
     {PLDI 2022}
   
-\pub{A Formal Model for Checked C}
+\pub{A Formal Model of Checked C}
     {CheckedCFormal.pdf}
     {Liyi Li, Yiyun Liu, Deena Postol, Leonidas Lampropoulos, David Van Horn, and Michael Hicks.}
     {CSF 2022}
@@ -299,6 +309,7 @@ Antonio Criminisi, Aditya Nori, Dimitrios Vytiniotis, Osbert Bastani, and Leonid
 
 \begin{rSection}{Teaching}
 
+  \teach{Instructor}{Programming Paradigms, CMSC 433, UMD}{Spring '24}
   \teach{Instructor}{Program Analysis and Understanding, CMSC 631, UMD}{Fall '23}    
   \teach{Instructor}{Program Analysis and Understanding, CMSC 631, UMD}{Fall '22}  
   \teach{STIC Supervisor}{Introduction to Programming Language Theory, CMSC 388X, UMD}{Spring '22}  
@@ -309,10 +320,11 @@ Antonio Criminisi, Aditya Nori, Dimitrios Vytiniotis, Osbert Bastani, and Leonid
   \teach{Instructor}{Program Analysis and Understanding, CMSC 631, UMD}{Fall '19}
   \teach{Lecturer}{Property-based Random Testing with QuickChick, DeepSpec Summer School}{Summer '18}
   \teach{Lecturer}{Property-based Random Testing with QuickChick, DeepSpec Summer School}{Summer '17}  
-%  \teach{TA}{Advanced Programming, CIS 552, UPenn}{Spring '14}
-%  \teach{TA}{Programming Languages and Techniques I, UPenn}{Fall '13}
-%  \teach{TA}{Programming Techniques, NTUA}{Spring '12}
-%  \teach{TA}{Intro to Programming, NTUA}{Fall '11}
+%   \teach{TA}{Advanced Programming, CIS 552, UPenn}{Spring '14}
+%   \teach{TA}{Programming Languages and Techniques I, UPenn}{Fall '13}
+%   \teach{TA}{Programming Techniques, NTUA}{Spring '12}
+%   \teach{TA}{Intro to Programming, NTUA}{Fall '11}
+  
 \end{rSection}
 
 
@@ -327,7 +339,16 @@ Antonio Criminisi, Aditya Nori, Dimitrios Vytiniotis, Osbert Bastani, and Leonid
 
 \newcommand{\apls}[1]{Athens PL Seminar, NTUA, #1}
 
+\pagebreak
 \begin{rSection}{Invited Talks and Tutorials}
+
+\talk{A QuickChick Carol}
+     {}
+     {BCP\@60, Royal Society of London, 2024}
+  
+\talk{Generating Well-Typed Terms that are not ``Useless''}
+     {}
+     {Athens PL Seminar, NTUA, 2023}
 
 \talk{How (not) to Give a Great Research Talk}
      {}

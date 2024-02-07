@@ -106,6 +106,22 @@
   \end{list}
 }
 
+% Defines the rSection environment for the large sections within the CV
+\newenvironment{rSectionFill}[2]{ % 1 input argument - section name
+  \sectionskip
+  \MakeUppercase{\bf #1} % Section title
+  {#2}
+  \sectionlineskip
+  \hrule % Horizontal line
+  \begin{list}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{1.5em} % Margin within the section
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
